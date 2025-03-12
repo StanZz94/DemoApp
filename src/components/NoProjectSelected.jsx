@@ -1,4 +1,4 @@
-import noProjectImage from '../assets/no-project.png'
+import noProjectImage from '../assets/no-projects.png'
 import Button from './Button'
 
 export default function NoProjectSelected() {
