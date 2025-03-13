@@ -13,6 +13,10 @@ export default function NewProject({ onAdd }) {
         const enteredDescription = description.current.value;
         const enteredDueDate = dueDate.current.value;
 
+        if(enteredTitle === '' || enteredDescription === '' || enteredDueDate === '') {
+            //add modal
+        }
+
         onAdd({
             title: enteredTitle,
             description: enteredDescription,
