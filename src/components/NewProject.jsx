@@ -2,19 +2,19 @@ import { useRef } from "react";
 import Button from "./Button";
 import Input from "./Input";
 
-export default function NewProject({onAdd}) {
+export default function NewProject({ onAdd }) {
 
     const title = useRef();
     const description = useRef();
     const dueDate = useRef();
-    
+
     function handleSave() {
         const enteredTitle = title.current.value;
         const enteredDescription = description.current.value;
         const enteredDueDate = dueDate.current.value;
 
         onAdd({
-            title:enteredTitle,
+            title: enteredTitle,
             description: enteredDescription,
             dueDate: enteredDueDate,
         })
