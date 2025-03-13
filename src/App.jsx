@@ -30,12 +30,12 @@ function App() {
     setProjectsState(prevState => {
       return {
         ...prevState,
+        selectedProjectId: undefined,
         projects: [...prevState.projects, newProject],
       }
     });
   }
 
-  console.log(projectsState)
   let content;
 
   if (projectsState.selectedProjectId === null) {
