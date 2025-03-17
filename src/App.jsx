@@ -30,10 +30,11 @@ function App() {
   }
 
   function handleDeleteTask(id) {
+    console.log(id)
     setProjectsState(prevState => {
       return {
         ...prevState,
-        sasks: prevState.tasks.filter((task) => task.id !== id),
+        tasks: prevState.tasks.filter((task) => task.id !== id),
       }
     });
   }
