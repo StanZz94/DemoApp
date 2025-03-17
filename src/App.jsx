@@ -17,7 +17,7 @@ function App() {
   }
 
   function handleDeleteTask() {
-    
+
   }
 
   function handleSelectProject(id) {
